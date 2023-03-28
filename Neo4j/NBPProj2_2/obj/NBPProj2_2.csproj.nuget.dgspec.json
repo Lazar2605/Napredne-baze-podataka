@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lidija\\Downloads\\NBPProj2_2 (1)\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2.csproj": {}
+    "C:\\Users\\Lidija\\Desktop\\Projekti\\Neo4j\\NBPProj2_2\\NBPProj2_2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lidija\\Downloads\\NBPProj2_2 (1)\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2.csproj": {
+    "C:\\Users\\Lidija\\Desktop\\Projekti\\Neo4j\\NBPProj2_2\\NBPProj2_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lidija\\Downloads\\NBPProj2_2 (1)\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2.csproj",
+        "projectUniqueName": "C:\\Users\\Lidija\\Desktop\\Projekti\\Neo4j\\NBPProj2_2\\NBPProj2_2.csproj",
         "projectName": "NBPProj2_2",
-        "projectPath": "C:\\Users\\Lidija\\Downloads\\NBPProj2_2 (1)\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2.csproj",
+        "projectPath": "C:\\Users\\Lidija\\Desktop\\Projekti\\Neo4j\\NBPProj2_2\\NBPProj2_2.csproj",
         "packagesPath": "C:\\Users\\Lidija\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lidija\\Downloads\\NBPProj2_2 (1)\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2\\obj\\",
+        "outputPath": "C:\\Users\\Lidija\\Desktop\\Projekti\\Neo4j\\NBPProj2_2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lidija\\AppData\\Roaming\\NuGet\\NuGet.Config",

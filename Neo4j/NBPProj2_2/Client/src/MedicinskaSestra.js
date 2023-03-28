@@ -74,92 +74,95 @@ export class MedicinskaSestra {
             }
         }
 
-        let tdN = document.createElement("td");
-        tdN.className = "tdN";
-        let glavna = document.createElement("button");
-        let nijeGlavna = document.createElement("button");
+        if (n == 2) {
 
-        glavna.onclick = () => {
-            let gl = document.querySelector(".nijeGlavna" + this.odeljenje);
-            if(gl != null)
-                gl.click();
-            fetch("http://localhost:5001/PostaviSestruZaGlavnu/" + this.jmbg,
-            {
-                method:"PUT",
-            }).then(r=>
+            let tdN = document.createElement("td");
+            tdN.className = "tdN";
+            let glavna = document.createElement("button");
+            let nijeGlavna = document.createElement("button");
+    
+            glavna.onclick = () => {
+                let gl = document.querySelector(".nijeGlavna" + this.odeljenje);
+                if(gl != null)
+                    gl.click();
+                fetch("http://localhost:5001/PostaviSestruZaGlavnu/" + this.jmbg,
                 {
-                    if(r.status==200)
+                    method:"PUT",
+                }).then(r=>
                     {
-                        r.text().then(data => {
-                            alert(data);
-                        })
-
-                        nijeGlavna.innerHTML = "smeni sestru sa pozicije glavne";
-                        nijeGlavna.className = "nijeGlavna" + this.odeljenje;
-                        tdN.appendChild(nijeGlavna);
-                        tdN.removeChild(glavna);
-                        console.log(gl);
-
-                    }
-                    else 
-                        r.text().then(data => {
-                            alert(data);
-                    })
-                })
-        }
-
-        nijeGlavna.onclick = () => {
-            fetch("http://localhost:5001/SmeniSestruSaPozicijeGlavnaSestra/" + this.jmbg,
-            {
-                method:"PUT",
-            }).then(r=>
-                {
-                    if(r.status==200)
-                    {
-                        r.text().then(data => {
-                            alert(data);
-                        })
-                        
-                        glavna.innerHTML = "postavi za glavnu";
-                        glavna.className = "glavna" + this.odeljenje;
-                        tdN.appendChild(glavna);
-                        tdN.removeChild(nijeGlavna);
-                    }
-                    else 
-                        r.text().then(data => {
-                            alert(data);
-                    })
-                })
-        }
-        fetch("http://localhost:5001/SestraJeGlavna/" + this.jmbg,
-        {
-            method:"GET",
-        }).then(r=>
-            {
-                if(r.status==200)
-                {
-                    r.text().then(data => {
-                        if(data == "false"){
-
-                            tr2.appendChild(tdN);
-                            glavna.innerHTML = "postavi za glavnu";
-                            glavna.className = "glavna" + this.odeljenje;
-                            tdN.appendChild(glavna);
-                        }
-                        else{
-
-                            tr2.appendChild(tdN);
+                        if(r.status==200)
+                        {
+                            r.text().then(data => {
+                                alert(data);
+                            })
+    
                             nijeGlavna.innerHTML = "smeni sestru sa pozicije glavne";
                             nijeGlavna.className = "nijeGlavna" + this.odeljenje;
                             tdN.appendChild(nijeGlavna);
+                            tdN.removeChild(glavna);
+                            console.log(gl);
+    
                         }
+                        else 
+                            r.text().then(data => {
+                                alert(data);
+                        })
                     })
-                }
-                else 
-                    r.text().then(data => {
-                        alert(data);
+            }
+    
+            nijeGlavna.onclick = () => {
+                fetch("http://localhost:5001/SmeniSestruSaPozicijeGlavnaSestra/" + this.jmbg,
+                {
+                    method:"PUT",
+                }).then(r=>
+                    {
+                        if(r.status==200)
+                        {
+                            r.text().then(data => {
+                                alert(data);
+                            })
+                            
+                            glavna.innerHTML = "postavi za glavnu";
+                            glavna.className = "glavna" + this.odeljenje;
+                            tdN.appendChild(glavna);
+                            tdN.removeChild(nijeGlavna);
+                        }
+                        else 
+                            r.text().then(data => {
+                                alert(data);
+                        })
+                    })
+            }
+            fetch("http://localhost:5001/SestraJeGlavna/" + this.jmbg,
+            {
+                method:"GET",
+            }).then(r=>
+                {
+                    if(r.status==200)
+                    {
+                        r.text().then(data => {
+                            if(data == "false"){
+    
+                                tr2.appendChild(tdN);
+                                glavna.innerHTML = "postavi za glavnu";
+                                glavna.className = "glavna" + this.odeljenje;
+                                tdN.appendChild(glavna);
+                            }
+                            else{
+    
+                                tr2.appendChild(tdN);
+                                nijeGlavna.innerHTML = "smeni sestru sa pozicije glavne";
+                                nijeGlavna.className = "nijeGlavna" + this.odeljenje;
+                                tdN.appendChild(nijeGlavna);
+                            }
+                        })
+                    }
+                    else 
+                        r.text().then(data => {
+                            alert(data);
+                    })
                 })
-            })
+        }
 
     }
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oqxEj+WzFK8R9557CuG5qLtWE8407aoWZdSJ3eHdsJ9bbBu9sn0wp7bxTYf9aJ2GsIEtPlYQexm+DLH28rIH8g==",
+  "dgSpecHash": "LfkxiWvrPOmmeiVLo4t+0SRwi61IUXpnZ+BOdkeQZGcJmxHTG6s8uHkQ9wb7JorkweA6VVsQGJ0MiJ6APzSYsQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lidija\\Downloads\\NBPProj2_2 (1)\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2\\NBPProj2_2.csproj",
+  "projectFilePath": "C:\\Users\\Lidija\\Desktop\\Projekti\\Neo4j\\NBPProj2_2\\NBPProj2_2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lidija\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\Lidija\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

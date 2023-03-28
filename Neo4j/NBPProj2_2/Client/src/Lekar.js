@@ -40,100 +40,103 @@ export class Lekar {
         buttonObrisi.innerHTML = "obriši";
         td.appendChild(buttonObrisi);
 
-        let tdN = document.createElement("td");
-        tdN.className = "tdN";
-        let nacelnik = document.createElement("button");
-        let nijeNacelnik = document.createElement("button");
+        if(n == 2) {
 
-        nacelnik.onclick = () => {
-            let nac = document.querySelector(".nijeNacelnik" + this.odeljenje);
-            if(nac != null)
-                nac.click();
-            fetch("http://localhost:5001/PostaviLekaraZaNacelnika/" + this.odeljenjeID + "/" + this.jmbg,
-            {
-                method:"PUT",
-            }).then(r=>
+            let tdN = document.createElement("td");
+            tdN.className = "tdN";
+            let nacelnik = document.createElement("button");
+            let nijeNacelnik = document.createElement("button");
+    
+            nacelnik.onclick = () => {
+                let nac = document.querySelector(".nijeNacelnik" + this.odeljenje);
+                if(nac != null)
+                    nac.click();
+                fetch("http://localhost:5001/PostaviLekaraZaNacelnika/" + this.odeljenjeID + "/" + this.jmbg,
                 {
-                    if(r.status==200)
+                    method:"PUT",
+                }).then(r=>
                     {
-                        r.text().then(data => {
-                            alert(data);
-                        })
-
-                        nijeNacelnik.innerHTML = "smeni načelnika";
-                        nijeNacelnik.className = "nijeNacelnik" + this.odeljenje;
-                        tdN.appendChild(nijeNacelnik);
-                        tdN.removeChild(nacelnik);
-                        console.log(nac);
-
-                    }
-                    else 
-                        r.text().then(data => {
-                            alert(data);
-                    })
-                })
-        }
-
-        nijeNacelnik.onclick = () => {
-            fetch("http://localhost:5001/SmeniNacelnika/" + this.odeljenjeID + "/" + this.jmbg,
-            {
-                method:"DELETE",
-            }).then(r=>
-                {
-                    if(r.status==200)
-                    {
-                        r.text().then(data => {
-                            alert(data);
-                        })
-                        
-                        nacelnik.innerHTML = "postavi za načelnika";
-                        nacelnik.className = "nacelnik" + this.odeljenje;
-                        tdN.appendChild(nacelnik);
-                        tdN.removeChild(nijeNacelnik);
-                    }
-                    else 
-                        r.text().then(data => {
-                            alert(data);
-                    })
-                })
-        }
-
-
-
-
-        fetch("http://localhost:5001/LekarJeNacelnik/" + this.jmbg,
-        {
-            method:"GET",
-        }).then(r=>
-            {
-                if(r.status==200)
-                {
-                    r.text().then(data => {
-                        if(data == "false"){
-
-                            tr2.appendChild(tdN);
-                            nacelnik.innerHTML = "postavi za načelnika";
-                            nacelnik.className = "nacelnik" + this.odeljenje;
-                            tdN.appendChild(nacelnik);
-                        }
-                        else{
-
-                            tr2.appendChild(tdN);
+                        if(r.status==200)
+                        {
+                            r.text().then(data => {
+                                alert(data);
+                            })
+    
                             nijeNacelnik.innerHTML = "smeni načelnika";
                             nijeNacelnik.className = "nijeNacelnik" + this.odeljenje;
                             tdN.appendChild(nijeNacelnik);
+                            tdN.removeChild(nacelnik);
+                            console.log(nac);
+    
                         }
+                        else 
+                            r.text().then(data => {
+                                alert(data);
+                        })
                     })
-                }
-                else 
-                    r.text().then(data => {
-                        alert(data);
+            }
+    
+            nijeNacelnik.onclick = () => {
+                fetch("http://localhost:5001/SmeniNacelnika/" + this.odeljenjeID + "/" + this.jmbg,
+                {
+                    method:"DELETE",
+                }).then(r=>
+                    {
+                        if(r.status==200)
+                        {
+                            r.text().then(data => {
+                                alert(data);
+                            })
+                            
+                            nacelnik.innerHTML = "postavi za načelnika";
+                            nacelnik.className = "nacelnik" + this.odeljenje;
+                            tdN.appendChild(nacelnik);
+                            tdN.removeChild(nijeNacelnik);
+                        }
+                        else 
+                            r.text().then(data => {
+                                alert(data);
+                        })
+                    })
+            }
+    
+    
+    
+    
+            fetch("http://localhost:5001/LekarJeNacelnik/" + this.jmbg,
+            {
+                method:"GET",
+            }).then(r=>
+                {
+                    if(r.status==200)
+                    {
+                        r.text().then(data => {
+                            if(data == "false"){
+    
+                                tr2.appendChild(tdN);
+                                nacelnik.innerHTML = "postavi za načelnika";
+                                nacelnik.className = "nacelnik" + this.odeljenje;
+                                tdN.appendChild(nacelnik);
+                            }
+                            else{
+    
+                                tr2.appendChild(tdN);
+                                nijeNacelnik.innerHTML = "smeni načelnika";
+                                nijeNacelnik.className = "nijeNacelnik" + this.odeljenje;
+                                tdN.appendChild(nijeNacelnik);
+                            }
+                        })
+                    }
+                    else 
+                        r.text().then(data => {
+                            alert(data);
+                    })
                 })
-            })
-
-            buttonIzmeni.onclick = () => {
-            
-            this.crtajFormu("izmeniLekara", tr2)
+    
+                buttonIzmeni.onclick = () => {
+                
+                this.crtajFormu("izmeniLekara", tr2)
+            }
         }
 
         buttonObrisi.onclick = () => {

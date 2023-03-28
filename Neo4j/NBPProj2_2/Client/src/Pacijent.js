@@ -65,21 +65,21 @@ export class Pacijent {
             td.appendChild(prikaziPreglede);
 
             prikaziPreglede.onclick = () => {
-
+                let divPacijentiTab = host.querySelector(".divPacijentiTab")
                 let tl2 = document.querySelector(".divTabelaPP2");
                 if (tl2 != null)
                     divPacijentiTab.removeChild(tl2);
-                let tabela = document.createElement("table");
-                tabela.className = "tabelaPP2";
+                let tabela2 = document.createElement("table");
+                tabela2.className = "tabelaPP2";
                 let divTabelaPP2 = document.createElement("div");
                 divTabelaPP2.className = "divTabelaPP2";
                 divPacijentiTab.appendChild(divTabelaPP2);
                 let labelaPP = document.createElement("label");
                 labelaPP.innerHTML = "Pregledi pacijenta:  " + this.ime + " " + this.prezime;
                 divTabelaPP2.appendChild(labelaPP);
-                divTabelaPP2.appendChild(tabela);
+                divTabelaPP2.appendChild(tabela2);
                 let tr = document.createElement("tr");
-                tabela.appendChild(tr);
+                tabela2.appendChild(tr);
                 let heder = ["datum", "razlog", "dijagnoza", "lekar"];
                 heder.forEach(h => {
 

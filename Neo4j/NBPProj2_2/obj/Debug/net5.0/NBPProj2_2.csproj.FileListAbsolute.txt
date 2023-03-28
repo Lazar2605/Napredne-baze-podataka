@@ -143,3 +143,37 @@ C:\Users\Lidija\Downloads\NBPProj2_2 (1)\NBPProj2_2\NBPProj2_2\NBPProj2_2\obj\De
 C:\Users\Lidija\Downloads\NBPProj2_2 (1)\NBPProj2_2\NBPProj2_2\NBPProj2_2\obj\Debug\net5.0\ref\NBPProj2_2.dll
 C:\Users\Lidija\Downloads\NBPProj2_2 (1)\NBPProj2_2\NBPProj2_2\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.pdb
 C:\Users\Lidija\Downloads\NBPProj2_2 (1)\NBPProj2_2\NBPProj2_2\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.genruntimeconfig.cache
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\appsettings.json
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\relate.project.json
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\NBPProj2_2.exe
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\NBPProj2_2.deps.json
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\NBPProj2_2.runtimeconfig.json
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\NBPProj2_2.runtimeconfig.dev.json
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\NBPProj2_2.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\ref\NBPProj2_2.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\NBPProj2_2.pdb
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\Neo4j.Driver.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\Neo4jClient.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.csproj.AssemblyReference.cache
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.AssemblyInfoInputs.cache
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.AssemblyInfo.cs
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.csproj.CoreCompileInputs.cache
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\staticwebassets\NBPProj2_2.StaticWebAssets.Manifest.cache
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\staticwebassets\NBPProj2_2.StaticWebAssets.xml
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\scopedcss\bundle\NBPProj2_2.styles.css
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.RazorTargetAssemblyInfo.cache
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.csproj.CopyComplete
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\ref\NBPProj2_2.dll
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.pdb
+C:\Users\Lidija\Desktop\Projekti\Neo4j\NBPProj2_2\obj\Debug\net5.0\NBPProj2_2.genruntimeconfig.cache

@@ -35,12 +35,6 @@ export class Odeljenje {
 
         td = document.createElement("td");
         tr2.appendChild(td);
-        let buttonObrisi = document.createElement("button");
-        buttonObrisi.innerHTML = "obriši";
-        td.appendChild(buttonObrisi);
-
-        td = document.createElement("td");
-        tr2.appendChild(td);
         let prikaziSveLekare = document.createElement("button");
         prikaziSveLekare.innerHTML = "prikaži sve lekare";
         td.appendChild(prikaziSveLekare);
@@ -201,33 +195,6 @@ export class Odeljenje {
         buttonIzmeni.onclick = () => {
             
             this.crtajFormu("izmeniOdeljenje", tr2)
-        }
-
-        buttonObrisi.onclick = () => {
-            var result = confirm("Da li ste sigurni?");
-            if(result == false){
-                event.preventDefault();
-            }
-            else {
-                
-                fetch("http://localhost:5001/DeleteOdeljenje/" + this.id,
-                {
-                    method:"DELETE",
-                }).then(r=>
-                    {
-                        if(r.status==200)
-                        {
-                            alert("Uspešno izbrisano odeljenje");
-                            tr2.innerHTML = "";
-    
-    
-                        }
-                        else 
-                            r.text().then(data => {
-                                alert(data);
-                        })
-                    })
-            }
         }
     }
 
